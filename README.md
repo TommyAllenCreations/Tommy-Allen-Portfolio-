@@ -1,118 +1,107 @@
-# Tommy-Allen-Portfolio-
+Tommy Allen Creations
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tommy Allen | Creative Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #ffffff;
+    }
+    .gallery img, video {
+      width: 100%;
+      max-width: 480px;
+      margin: 20px 10px;
+      border-radius: 8px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">TA</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Tommy Allen</h1>
-    <p>Creative Director & Visual Storyteller</p>
-  </section>
+<header>
+  <h1>Tommy Allen</h1>
+  <p>Creative Director & Visual Storyteller</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">My Work</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about" class="content-section">
-    <h2>About Me</h2>
-    <p>
-      I’m a dynamic and results-driven creative with extensive experience in editing and media software including iMovie, iOS, Photography, and Photoshop. I'm passionate about leadership, creative direction, and making impactful connections through design and media.
-    </p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a dynamic and results-driven creative with extensive experience in editing, photography, and media design. I’m passionate about leadership and telling impactful stories through visual art and digital media.
+  </p>
+</section>
 
-  <section id="portfolio" class="content-section">
-    <h2>Portfolio</h2>
-    <div class="portfolio-grid">
-      <div class="item">
-        <img src="assets/cecred-ad.jpeg" alt="Cécred Ad" />
-        <p>Cécred TikTok Campaign</p>
-      </div>
-      <!-- Add more projects as needed -->
-    </div>
-  </section>
+<section id="work">
+  <h2>My Work</h2>
+  <div class="gallery">
+    <!-- 🔻 ADD YOUR IMAGES BELOW -->
+    <img src="assets/cecred-ad.jpeg" alt="Cécred Ad">
+    <img src="assets/project2.jpg" alt="Another Project">
+  </div>
+</section>
 
-  <section id="media" class="content-section">
-    <h2>Media Samples</h2>
-    <video controls width="100%">
-      <source src="assets/your-video.mp4" type="video/mp4" />
+<section id="videos">
+  <h2>Video Clips</h2>
+  <div class="gallery">
+    <!-- 🔻 ADD YOUR VIDEO CLIPS BELOW -->
+    <video controls>
+      <source src="assets/cecred-tiktok.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </section>
+    <video controls>
+      <source src="assets/apple-training.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
 
-  <section id="contact" class="content-section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:natea887@gmail.com">natea887@gmail.com</a></p>
-    <p>Phone: <a href="tel:+17039868412">(703) 986-8412</a></p>
-  </section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:natea887@gmail.com">natea887@gmail.com</a></p>
+  <p>Phone: <a href="tel:+17039868412">(703) 986-8412</a></p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Tommy Allen</p>
-  </footer>
+<footer>
+  &copy; 2025 Tommy Allen
+</footer>
+
 </body>
 </html>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #1a1a1a;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-nav a {
-  margin-left: 1.5rem;
-  color: #fff;
-  text-decoration: none;
-}
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-}
-.hero h1 {
-  font-size: 3rem;
-}
-.content-section {
-  padding: 4rem 2rem;
-}
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.item img {
-  width: 100%;
-  border-radius: 8px;
-}
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #1a1a1a;
-  color: #aaa;
-}
-a {
-  color: #03dac6;
-}
